@@ -1,13 +1,39 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+我是哈尔滨工业大学未来技术学院人工智能专业的大四本科生，同时我也是哈工大[模式识别与智能系统研究中心](https://pr-ai.hit.edu.cn/)的实习生
+
+我的研究领域包括强化学习和模仿学习，目前正在专注于可解释强化学习和多智能体强化学习
+
+# 教育经历
+* *2021.09 - 2025.06*，本科，哈尔滨工业大学，未来技术学院（本硕博连读实验班）
+
+# 论文专利
+
+## 论文
+* [An Imitative Reinforcement Learning Framework for Autonomous Dogfight](https://arxiv.org/abs/2406.11562). Siyuan Li, **Rongchang Zuo**, Peng Liu, Yingnan Zhao. *under review*.
+* [Robust Visual Imitation Learning with Inverse Dynamics Representations](https://ojs.aaai.org/index.php/AAAI/article/view/29265). Siyuan Li\*, Xun Wang\*, **Rongchang Zuo**, Kewu Sun, Lingfei Cui, Jishiyu Ding, Peng Liu, Zhe Ma. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024*.
+
+## 专利
+* [一种具有转移距离度量性的机械控制设备状态表征学习方法、电子设备及存储介质](https://kns.cnki.net/kcms2/article/abstract?v=pmRW_HGsdGwDNpW_h9olV6OVdae6ph-kQ7Zb7GggtSy51bg3K6ODvirW5v9ZqgEVys9vkBN-Jxy0tbgJ-SyvCUHZkWR5u422bf0Q4oPnWg1ArYg51VZHmw52g0JPifED9eSKrL-q6CTBHcPh1ENuakVFeBBXeLfef6YJQmNG8tx_ctyJfIOF0tNWDml6N0DKkQsIFNBKJOU=&uniplatform=NZKPT&language=CHS). 李斯源，韩世杰，刘鹏，**左镕畅**，高天翔，洪子健.
+* [面向高维扰动环境的小样本鲁棒模仿学习训练方法、电子设备及存储介质](https://kns.cnki.net/kcms2/article/abstract?v=pmRW_HGsdGwDNpW_h9olV6OVdae6ph-kQ7Zb7GggtSy51bg3K6ODvlwZ1c-a-pZpeg7vH21F0jAL80hpshVGaN9n5e2dq8jWUmU5cy3OtH-vo9BCUvJjNGa1p_m4TYy6-WdI56aJncCj7jQagHHC7lCKpidvHvpQyj9kxKUMwJs90DGa69Xdx46kbZA8WuONnhJsydLXWTw=&uniplatform=NZKPT&language=CHS). 汪勋，李斯源，**左镕畅**，孙科武，杨皙睿，刘鹏.
+
+# 荣誉奖项
+* *2023.12*，黑龙江省三好学生
+* *2023.12*，深圳证券交易所奖学金
+* *2022.12*，第十六届iCAN大学生创新创业大赛总决赛三等奖
+* *2022.08*，2022年全国大学生物联网设计竞赛东北赛区二等奖
+
+# 实习经历
+* finding ...
+
+<!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
 ======
@@ -46,4 +72,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->

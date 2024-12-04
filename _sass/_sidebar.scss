@@ -119,18 +119,30 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 14px;
+    margin-bottom: 12px;
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: 24px;
 }
 
 .sidebar .author__desktop {
   display: none;
   @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+/* 默认显示侧边栏新闻内容 */
+.sidebar-extra-content {
+  display: none;
+}
+
+/* 在屏幕宽度超过 1024px 时隐藏侧边栏新闻内容 */
+@media screen and (min-width: 1024px) {
+  .sidebar-extra-content {
     display: block;
   }
 }

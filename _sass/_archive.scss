@@ -27,20 +27,25 @@
   }
 }
 
-.archive__subtitle {
+.archive__subtitle:first-of-type {
+  margin-top: 1.0em;  /* 仅调整第一个年份标题的上方间距 */
+}
+
+.archive__subtitle {  // 年份
   margin: 1.414em 0 0;
-  padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  padding-bottom: 0.2em;
+  font-size: 1.55em;
   color: mix(#fff, $gray, 25%);
-  border-bottom: 1px solid $border-color;
+  border-bottom: 2px solid $border-color;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
   }
 }
 
-.archive__item-title {
+.archive__item-title {  // 标题
   margin-bottom: 0.25em;
+  margin-top: 1.5em;
   font-family: $sans-serif-narrow;
 
   a + a {
@@ -57,8 +62,8 @@
   }
 }
 
-.archive__item-excerpt {
-  margin-top: 0;
+.archive__item-excerpt {  // 摘要
+  margin-top: -15px;
   font-size: $type-size-6;
 
   & + p {
@@ -103,7 +108,7 @@
   }
 
   .page__meta {
-    margin: 0 0 4px;
+    margin: 0 0 -10px -1px;  // 少于1分钟（上右下左）
   }
 }
 

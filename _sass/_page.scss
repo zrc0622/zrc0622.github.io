@@ -5,7 +5,7 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 2em;
+  margin-top: 1.75em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
@@ -20,7 +20,7 @@
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(0 of 12); // 页面宽度
   }
 
   .page__inner-wrap {
@@ -50,13 +50,26 @@
 
 .page__content {
 
+  h1 {
+    padding-top: 0.5em; // 一级标题前距离
+    font-size: 1.5em;
+    padding-bottom: 0.0em;
+  }
+
   h2 {
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    margin-top: 1.3em; // 减小与一级标题的距离
+    font-size: 1.3em;
+    line-height: 1; // 调整行高
+    // border-bottom: 1px solid $border-color; // 去除二级标题横线
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: 0.95em; // 正文字号
+    line-height: 1.4; // 正文行间距
+  }
+
+  p {
+    line-height: 1.0; // 段落间距（li是列表间距）
   }
 
   /* paragraph indents */

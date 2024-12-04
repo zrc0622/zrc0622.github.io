@@ -1,5 +1,11 @@
 # main links links
-main:
+main:    
+  - title: "博客"
+    url: /blogs/
+
+  - title: "开源代码"
+    url: /github/
+
   - title: "Publications"
     url: /publications/
 
@@ -11,10 +17,7 @@ main:
     
   - title: "Portfolio"
     url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+
   - title: "CV"
     url: /cv/
     
