@@ -9,3 +9,7 @@
 5. 博客内容：`_posts`
 6. 博客布局：`_sass\_archive.scss`
 7. 开源代码内容修改：`_pages\github.md`
+8. 上边栏内容：`_data\navigation.yml`
+
+# TODO
+- [ ] 调整上边栏间距: `_sass\_masthead.scss`

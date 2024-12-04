@@ -17,6 +17,7 @@ redirect_from:
 # 论文专利
 
 ## 论文
+* [SkillTree: Explainable Skill-Based Deep Reinforcement Learning for Long-Horizon Control Tasks](). Yongyan Wen, Siyuan Li, **Rongchang Zuo**, Lei Yuan, Hangyu Mao, Peng Liu. *under review*.
 * [An Imitative Reinforcement Learning Framework for Autonomous Dogfight](https://arxiv.org/abs/2406.11562). Siyuan Li, **Rongchang Zuo**, Peng Liu, Yingnan Zhao. *under review*.
 * [Robust Visual Imitation Learning with Inverse Dynamics Representations](https://ojs.aaai.org/index.php/AAAI/article/view/29265). Siyuan Li\*, Xun Wang\*, **Rongchang Zuo**, Kewu Sun, Lingfei Cui, Jishiyu Ding, Peng Liu, Zhe Ma. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024*.
 
@@ -30,8 +31,8 @@ redirect_from:
 * *2022.12*，第十六届iCAN大学生创新创业大赛总决赛三等奖
 * *2022.08*，2022年全国大学生物联网设计竞赛东北赛区二等奖
 
-# 实习经历
-* finding ...
+# 工作经历
+* *2024.12 - 至今*，Shopee，推荐算法实习生
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
