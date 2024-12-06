@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "zh-CN"
-title                    : "主页"
+title                    : "个人主页"
 title2                   : "Rongchang Zuo (左镕畅)"
 title_separator          : "-"
 name                     : &name "Your Name"

@@ -272,7 +272,7 @@ zh: &DEFAULT_ZH
   page                       : "页面"
   pagination_previous        : "上一页"
   pagination_next            : "下一页"
-  breadcrumb_home_label      : "主页"
+  breadcrumb_home_label      : "个人主页"
   breadcrumb_separator       : "/"
   toc_label                  : "本页内容"
   ext_link_label             : "直接链接"
