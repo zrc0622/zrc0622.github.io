@@ -140,8 +140,8 @@
   display: none;
 }
 
-/* 在屏幕宽度超过 1024px 时隐藏侧边栏新闻内容 */
-@media screen and (min-width: 1024px) {
+/* 在屏幕宽度超过 1600px 时隐藏侧边栏新闻内容 */
+@media screen and (min-width: 1600px) {
   .sidebar-extra-content {
     display: block;
   }

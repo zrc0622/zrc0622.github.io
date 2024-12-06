@@ -13,3 +13,6 @@
 
 # TODO
 - [ ] 调整上边栏间距: `_sass\_masthead.scss`
+- [ ] 手机端显示`Follow`按钮
+- [ ] 防止侧边栏在缩小时出现上下滑块
+  - [x] 通过调整`_sass_sidebar.css`隐藏侧边栏新闻简单实现
