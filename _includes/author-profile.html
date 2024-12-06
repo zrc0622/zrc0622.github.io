@@ -6,7 +6,7 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
+  <div class="author__avatar" style="margin-bottom: 25px;">
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
@@ -14,7 +14,7 @@
     {% endif %}
   </div>
 
-  <div class="author__content">
+  <div class="author__content" style="margin-bottom: 25px;">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
@@ -22,8 +22,8 @@
 
   <!-- 使用新的样式 -->
   <div class="author__urls-wrapper">
-    <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
-    <ul class="author__urls social-icons">
+    <button class="btn btn--inverse">关 注</button>
+    <ul class="author__loc social-icons">
       <!-- {% if site.description %}
         <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
       {% endif %} -->
@@ -43,6 +43,8 @@
         </li>
         <!-- <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li> -->
       {% endif %}
+    </ul>
+    <ul class="author__urls social-icons">
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
       {% endif %}
@@ -52,6 +54,7 @@
           <a href="mailto:{{ author.email }}">
             <img src="/images/icons/envelope-solid.svg " style="width: 14px; height: 14px; margin-top: -2.5px; margin-right: 2px;">
              Email
+            <img style="margin-right: 2px;">   
           </a>
         </li>
       {% endif %}
@@ -91,9 +94,10 @@
       {% if author.github %}
         <!-- <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li> -->
         <li>
-          <a href="https://github.com/{{ author.github }}">
+          <a href="https://github.com/{{ author.github }}" >
             <img src="/images/icons/github-brands-solid.svg " style="width: 14px; height: 14px; margin-top: -2.5px; margin-right: 2px;">
              Github
+            <img style="margin-right: 2px;"> 
           </a>
         </li>
       {% endif %}
@@ -139,6 +143,7 @@
           <a href="{{ author.googlescholar }}">
             <img src="/images/icons/google-scholar.svg" style="width: 14px; height: 14px; margin-top: -2.5px; margin-right: 2px;">
              Google Scholar
+            <img style="margin-right: 2px;">   
           </a>
         </li>
       {% endif %}
@@ -151,6 +156,7 @@
           <a href="{{ author.orcid }}">
             <img src="/images/icons/orcid-brands-solid.svg" style="width: 14px; height: 14px; margin-top: -2.5px; margin-right: 2px;">
              ORCID
+            <img style="margin-right: 2px;"> 
           </a>
         </li>
       {% endif %}
@@ -284,8 +290,8 @@
     }
   </style>
   
-  <div class="sidebar-extra-content">
-    <h3 class="extra-title">🔥 News</h3>
+  <div class="sidebar-extra-content" style="margin-top: -9px;">
+    <h3 class="extra-title"><span style="font-size: 14px; vertical-align: 0.8px;">🔥</span> News</h3>
     <ul class="extra-list">
       <li><span class="highlight-blue">2024.11</span>：获得了 Shopee 推荐算法的实习机会</li>
       <li><span class="highlight-blue">2024.07</span>：获得了清深数信院人工智能项目的拟录取资格</li>
