@@ -76,7 +76,8 @@
   }
 
   p {
-    line-height: 1.0; // 段落间距（li是列表间距）
+    line-height: 1.8; // 段 行间距（li是列表 行间距）
+    margin-bottom: 5px !important;  // 段 段后距
   }
 
   /* paragraph indents */
