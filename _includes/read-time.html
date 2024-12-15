@@ -1,13 +1,113 @@
 {% if post.read_time %}
-  {% assign words = post.content | strip_html | number_of_words %}
+  	<!-- {% assign words = post.content | strip_html | number_of_words %} -->
+   
+	{% comment %} 当构建使用的 Jekyll 版本大于等于 4.1 时的字数计算方式 {% endcomment %}
+	{% if jekyll.version >= "4.1" %}
+	{% assign words = post.content | strip_html | number_of_words: "auto" %}
+	{% else %}
+	
+	{% comment %} 当构建使用的 Jekyll 版本小于 4.1 时的字数计算方式 {% endcomment %}
+	{% comment %} Starting write by Dancying {% endcomment %}
+	{% assign page_content = post.content | strip_html | split: "" %}
+	{% assign words = 0 %}
+	{% assign is_cjk = true %}
+	{% comment %} 使用循环逐个判断字符类型 {% endcomment %}
+	{% for i in page_content %}
+		{% comment %} 对 ASCII 码小于波浪线以下的部分进行细分 {% endcomment %}
+		{% if i <= "~" %}
+		{% comment %} 遇到大写字母、小写字母、数字时的处理方式 {% endcomment %}
+		{% if i >= "a" and i <= "z" %}
+			{% assign is_cjk = false %}
+		{% elsif i >= "A" and i <= "Z" %}
+			{% assign is_cjk = false %}
+		{% elsif i >= "0" and i <= "9" %}
+			{% assign is_cjk = false %}
+		{% comment %} 遇到其他字符时的处理方式 {% endcomment %}
+		{% else %}
+			{% if i <= " " %}
+			{% if is_cjk == false %}
+				{% assign words = words | plus: 1 %}
+				{% assign is_cjk = true %}
+			{% endif %}
+			{% elsif i == "." %}
+			{% assign is_cjk = false %}
+			{% else %}
+			{% if is_cjk == false %}
+				{% assign words = words | plus: 1 %}
+				{% assign is_cjk = true %}
+			{% endif %}
+			{% endif %}
+		{% endif %}
+		{% comment %} ASCII 码大于波浪线的都算为一个字数 {% endcomment %}
+		{% else %}
+		{% if is_cjk == false %}
+			{% assign words = words | plus: 1 %}
+			{% assign is_cjk = true %}
+		{% endif %}
+		{% assign words = words | plus: 1 %}
+		{% endif %}
+	{% endfor %}
+	{% comment %} Ending write by Dancying {% endcomment %}
+	{% endif %}
+
 {% elsif page.read_time %}
-  {% assign words = page.content | strip_html | number_of_words %}
+  	<!-- {% assign words = page.content | strip_html | number_of_words %} -->
+
+	{% comment %} 当构建使用的 Jekyll 版本大于等于 4.1 时的字数计算方式 {% endcomment %}
+	{% if jekyll.version >= "4.1" %}
+	{% assign words = page.content | strip_html | number_of_words: "auto" %}
+	{% else %}
+	
+	{% comment %} 当构建使用的 Jekyll 版本小于 4.1 时的字数计算方式 {% endcomment %}
+	{% comment %} Starting write by Dancying {% endcomment %}
+	{% assign page_content = page.content | strip_html | split: "" %}
+	{% assign words = 0 %}
+	{% assign is_cjk = true %}
+	{% comment %} 使用循环逐个判断字符类型 {% endcomment %}
+	{% for i in page_content %}
+		{% comment %} 对 ASCII 码小于波浪线以下的部分进行细分 {% endcomment %}
+		{% if i <= "~" %}
+		{% comment %} 遇到大写字母、小写字母、数字时的处理方式 {% endcomment %}
+		{% if i >= "a" and i <= "z" %}
+			{% assign is_cjk = false %}
+		{% elsif i >= "A" and i <= "Z" %}
+			{% assign is_cjk = false %}
+		{% elsif i >= "0" and i <= "9" %}
+			{% assign is_cjk = false %}
+		{% comment %} 遇到其他字符时的处理方式 {% endcomment %}
+		{% else %}
+			{% if i <= " " %}
+			{% if is_cjk == false %}
+				{% assign words = words | plus: 1 %}
+				{% assign is_cjk = true %}
+			{% endif %}
+			{% elsif i == "." %}
+			{% assign is_cjk = false %}
+			{% else %}
+			{% if is_cjk == false %}
+				{% assign words = words | plus: 1 %}
+				{% assign is_cjk = true %}
+			{% endif %}
+			{% endif %}
+		{% endif %}
+		{% comment %} ASCII 码大于波浪线的都算为一个字数 {% endcomment %}
+		{% else %}
+		{% if is_cjk == false %}
+			{% assign words = words | plus: 1 %}
+			{% assign is_cjk = true %}
+		{% endif %}
+		{% assign words = words | plus: 1 %}
+		{% endif %}
+	{% endfor %}
+	{% comment %} Ending write by Dancying {% endcomment %}
+	{% endif %}
+
 {% endif %}
 
 {% if site.words_per_minute %}
-  {% if words < 180 %}
+  	{% if words < site.words_per_minute %}
 	  {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
-	{% elsif words < 360 %}
+	{% elsif words < site.words_per_minute | times: 2 %}
 	  1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
 	{% else %}
 	  {{ words | divided_by:site.words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
