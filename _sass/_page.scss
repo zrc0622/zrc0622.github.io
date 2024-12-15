@@ -65,7 +65,14 @@
 
   p, li, dl {
     font-size: 0.95em; // 正文字号
+    letter-spacing: 0.4px;  // 字间距
     line-height: 1.4; // 正文行间距
+  }
+
+  li {
+    line-height: 1.8;
+    margin-bottom: 3px;
+    margin-left: -5px;
   }
 
   p {

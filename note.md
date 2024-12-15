@@ -12,9 +12,10 @@
 8. 上边栏内容：`_data\navigation.yml`
 
 # TODO
-- [ ] 调整上边栏间距: `_sass\_masthead.scss`
+- [x] 调整上边栏间距: `_sass\_masthead.scss`
 - [x] 手机端显示`Follow`按钮
 - [ ] 防止侧边栏在缩小时出现上下滑块
   - [x] 通过调整`_sass_sidebar.css`在特定大小时隐藏侧边栏新闻，简单实现防止上下滑块的出现
 - [x] 博客阅读时间统计方式
   - [x] 博客阅读时间内外不同bug
+- [x] 调整博客列表间距
