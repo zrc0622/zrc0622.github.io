@@ -18,7 +18,7 @@ redirect_from:
 # 论文专利
 
 ## 论文
-* [SkillTree: Explainable Skill-Based Deep Reinforcement Learning for Long-Horizon Control Tasks](https://arxiv.org/abs/2411.12173). Yongyan Wen, Siyuan Li, **Rongchang Zuo**, Lei Yuan, Hangyu Mao, Peng Liu. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2025*.
+* [SkillTree: Explainable Skill-Based Deep Reinforcement Learning for Long-Horizon Control Tasks](https://arxiv.org/abs/2411.12173). Yongyan Wen, Siyuan Li, **Rongchang Zuo**, Lei Yuan, Hangyu Mao, Peng Liu. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2025*. <span style="color: red;">(Oral)</span>.
 * [An Imitative Reinforcement Learning Framework for Autonomous Dogfight](https://arxiv.org/abs/2406.11562). Siyuan Li, **Rongchang Zuo**, Peng Liu, Yingnan Zhao. *under review*.
 * [Robust Visual Imitation Learning with Inverse Dynamics Representations](https://ojs.aaai.org/index.php/AAAI/article/view/29265). Siyuan Li\*, Xun Wang\*, **Rongchang Zuo**, Kewu Sun, Lingfei Cui, Jishiyu Ding, Peng Liu, Zhe Ma. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024*.
 
