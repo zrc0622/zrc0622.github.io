@@ -14,8 +14,8 @@ redirect_from:
 | - | - | - | - | - |
 | 校级优秀团员 | 校级 | <span style="color: red;">思政</span> | 2024.05 | 院前5% |
 | 校级优秀学生 | 校级 | <span style="color: red;">思政</span> | 2024.10 | 前10% |
-| 一等人民奖学金 | | <span style="color: yellow;">奖学金</span> | 2024.05 | |
-| 二等人民奖学金 | | <span style="color: yellow;">奖学金</span> | 2024.09 | |
+| 一等人民奖学金 | | <span style="color: orange;">奖学金</span> | 2024.05 | |
+| 二等人民奖学金 | | <span style="color: orange;">奖学金</span> | 2024.09 | |
 
 ## 大二
 
@@ -27,9 +27,9 @@ redirect_from:
 | 黑龙江省三好学生 | 省级 | <span style="color: red;">思政</span> | 2023.12 | |
 | 全国大学生电子商务“创新，创意及创业”挑战赛最佳创新奖 | 校级 | <span style="color: blue;">竞赛</span> | 2023.06 | |
 | 大学生创新创业训练计划校级二等奖 | 校级 | <span style="color: blue;">竞赛</span> | 2023.12 | |
-| 一等人民奖学金 | | <span style="color: yellow;">奖学金</span> | 2023.05 | |
-| 一等人民奖学金 | | <span style="color: yellow;">奖学金</span> | 2023.11 | |
-| 深圳证券交易所奖学金 | | <span style="color: yellow;">奖学金</span> | 2023.12 | 院前1% |
+| 一等人民奖学金 | | <span style="color: orange;">奖学金</span> | 2023.05 | |
+| 一等人民奖学金 | | <span style="color: orange;">奖学金</span> | 2023.11 | |
+| 深圳证券交易所奖学金 | | <span style="color: orange;">奖学金</span> | 2023.12 | 院前1% |
 
 ## 大一
 
@@ -43,5 +43,5 @@ redirect_from:
 | “青春谱华章·筑梦百校行”社会实践活动优秀团队项目奖 | 校级 | <span style="color: green;">实践</span> | 2022.04 | |
 | “三下乡”暑期社会实践活动校级一等奖 | 校级 | <span style="color: green;">实践</span> | 2022.10 | |
 | 全国大学生暑期实践项目TOP100 | 国家级 | <span style="color: green;">实践</span> | 2022.12 | |
-| 二等人民奖学金 | | <span style="color: yellow;">奖学金</span> | 2022.05 | |
-| 一等人民奖学金 | | <span style="color: yellow;">奖学金</span> | 2022.11 | 院TOP1 |
+| 二等人民奖学金 | | <span style="color: orange;">奖学金</span> | 2022.05 | |
+| 一等人民奖学金 | | <span style="color: orange;">奖学金</span> | 2022.11 | 院TOP1 |
