@@ -34,6 +34,12 @@ redirect_from:
 </style>
 
 <h3>大四</h3>
+<table class="awards-table">
+    <tr>
+        <th>名称</th><th>级别</th><th>类别</th><th>时间</th><th>其它</th>
+    </tr>
+    <tr><td>黑龙江省“优秀毕业生”</td><td>省级</td><td><span style="color: red;">思政</span></td><td>2025.04</td><td>院前5%</td></tr>
+</table>
 
 <h3>大三</h3>
 <table class="awards-table">
@@ -54,7 +60,7 @@ redirect_from:
     <tr><td>社会实践优秀个人</td><td>院级</td><td><span style="color: red;">思政</span></td><td>2023.05</td><td>院前1%</td></tr>
     <tr><td>校级优秀团员</td><td>校级</td><td><span style="color: red;">思政</span></td><td>2023.05</td><td>院前5%</td></tr>
     <tr><td>院级优秀学生</td><td>院级</td><td><span style="color: red;">思政</span></td><td>2023.12</td><td></td></tr>
-    <tr><td>黑龙江省三好学生</td><td>省级</td><td><span style="color: red;">思政</span></td><td>2023.12</td><td></td></tr>
+    <tr><td>黑龙江省“三好学生”</td><td>省级</td><td><span style="color: red;">思政</span></td><td>2023.12</td><td></td></tr>
     <tr><td>全国大学生电子商务"创新，创意及创业"挑战赛最佳创新奖</td><td>校级</td><td><span style="color: blue;">竞赛</span></td><td>2023.06</td><td></td></tr>
     <tr><td>大学生创新创业训练计划项目校级二等奖</td><td>校级</td><td><span style="color: blue;">竞赛</span></td><td>2023.12</td><td></td></tr>
     <tr><td>一等人民奖学金</td><td></td><td><span style="color: orange;">奖学金</span></td><td>2023.06</td><td></td></tr>
