@@ -11,13 +11,14 @@ redirect_from:
 - [x] 与语雀记录核对
 - [ ] 志愿时长
 - [ ] 社团中设计的海报
-- [ ] 表格列对齐
+- [x] 表格列对齐
 
 <style>
 .awards-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    font-size: 0.75em;
 }
 .awards-table th, 
 .awards-table td {
@@ -26,10 +27,34 @@ redirect_from:
     border: 1px solid #ddd;
     text-align: left;
 }
-/* 单独设置名称列的宽度 */
-.awards-table th:nth-child(1),
+/* 设置第一列的宽度 */
+.awards-table th:nth-child(1), 
 .awards-table td:nth-child(1) {
-    width: 35%;
+    width: 35%;  /* 第一列宽度为35% */
+}
+
+/* 设置第二列的宽度 */
+.awards-table th:nth-child(2), 
+.awards-table td:nth-child(2) {
+    width: 15%;  /* 第二列宽度为20% */
+}
+
+/* 设置第三列的宽度 */
+.awards-table th:nth-child(3), 
+.awards-table td:nth-child(3) {
+    width: 15%;  /* 第三列宽度为20% */
+}
+
+/* 设置第四列的宽度 */
+.awards-table th:nth-child(4), 
+.awards-table td:nth-child(4) {
+    width: 20%;  /* 第四列宽度为15% */
+}
+
+/* 设置第五列的宽度 */
+.awards-table th:nth-child(5), 
+.awards-table td:nth-child(5) {
+    width: 15%;  /* 第五列宽度为10% */
 }
 </style>
 
