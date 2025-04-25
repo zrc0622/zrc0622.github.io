@@ -18,7 +18,7 @@ redirect_from:
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    font-size: 0.75em;
+    font-size: 1.0em;
 }
 .awards-table th, 
 .awards-table td {
@@ -30,19 +30,19 @@ redirect_from:
 /* 设置第一列的宽度 */
 .awards-table th:nth-child(1), 
 .awards-table td:nth-child(1) {
-    width: 35%;  /* 第一列宽度为35% */
+    width: 41%;  /* 第一列宽度为35% */
 }
 
 /* 设置第二列的宽度 */
 .awards-table th:nth-child(2), 
 .awards-table td:nth-child(2) {
-    width: 15%;  /* 第二列宽度为20% */
+    width: 13%;  /* 第二列宽度为20% */
 }
 
 /* 设置第三列的宽度 */
 .awards-table th:nth-child(3), 
 .awards-table td:nth-child(3) {
-    width: 15%;  /* 第三列宽度为20% */
+    width: 13%;  /* 第三列宽度为20% */
 }
 
 /* 设置第四列的宽度 */
@@ -54,7 +54,7 @@ redirect_from:
 /* 设置第五列的宽度 */
 .awards-table th:nth-child(5), 
 .awards-table td:nth-child(5) {
-    width: 15%;  /* 第五列宽度为10% */
+    width: 13%;  /* 第五列宽度为10% */
 }
 </style>
 
