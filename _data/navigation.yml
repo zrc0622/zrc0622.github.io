@@ -1,13 +1,13 @@
 # main links links
 main:    
-  - title: "生活随笔"
-    url: /blogs/
+  - title: "荣誉奖项"
+    url: /awards/
 
   - title: "开源代码"
     url: /github/
 
-  - title: "荣誉奖项"
-    url: /awards/
+  - title: "生活随笔"
+    url: /blogs/
 
   # - title: "Publications"
   #   url: /publications/

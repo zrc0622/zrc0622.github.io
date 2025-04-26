@@ -15,6 +15,10 @@ redirect_from:
     font-size: 0.95em;
 }
 .awards-table th, 
+.awards-table tr:first-child th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
 .awards-table td {
     width: 19%;
     padding: 8px;
@@ -103,10 +107,3 @@ redirect_from:
     <tr><td>二等人民奖学金</td><td></td><td><span style="color: orange;">奖学金</span></td><td>2022.05</td><td></td></tr>
     <tr><td>一等人民奖学金</td><td></td><td><span style="color: orange;">奖学金</span></td><td>2022.11</td><td>院TOP1</td></tr>
 </table>
-
-<h2>TODO</h2>
-- [x] 奖项完成了金山文档的所有
-- [x] 与语雀记录核对
-- [ ] 志愿时长
-- [ ] 社团中设计的海报
-- [x] 表格列对齐
