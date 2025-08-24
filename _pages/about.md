@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-我是哈尔滨工业大学未来技术学院人工智能专业的大四本科生，同时我也是哈工大[模式识别与智能系统研究中心](https://pr-ai.hit.edu.cn/)的实习生
+我是清华大学深圳国际研究生院数据与信息研究院（人工智能项目）的硕士一年级学生，同时也是[智能计算实验室](https://thusigsiclab.github.io/thu.github.io/)的成员
 
 <p style="margin-bottom: 18px !important;">我的研究领域包括强化学习和模仿学习，目前正在专注于可解释强化学习和多智能体强化学习</p>
 
@@ -19,7 +19,7 @@ redirect_from:
 
 ## 论文
 * [SkillTree: Explainable Skill-Based Deep Reinforcement Learning for Long-Horizon Control Tasks](https://ojs.aaai.org/index.php/AAAI/article/view/35451). Yongyan Wen, Siyuan Li, **Rongchang Zuo**, Lei Yuan, Hangyu Mao, Peng Liu. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2025*. <span style="color: red;">(Oral)</span>.
-* [An Imitative Reinforcement Learning Framework for Autonomous Dogfight](https://arxiv.org/abs/2406.11562). Siyuan Li, **Rongchang Zuo**, Peng Liu, Yingnan Zhao. *under review*.
+* [An Imitative Reinforcement Learning Framework for Autonomous Dogfight](https://arxiv.org/abs/2406.11562). Siyuan Li, **Rongchang Zuo**, Bofei Liu, Peng Liu, Yingnan Zhao. *under review*.
 * [Robust Visual Imitation Learning with Inverse Dynamics Representations](https://ojs.aaai.org/index.php/AAAI/article/view/29265). Siyuan Li\*, Xun Wang\*, **Rongchang Zuo**, Kewu Sun, Lingfei Cui, Jishiyu Ding, Peng Liu, Zhe Ma. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024*.
 
 ## 专利
@@ -34,7 +34,7 @@ redirect_from:
 * *2022.08*：2022年全国大学生物联网设计竞赛东北赛区二等奖
 
 # 工作经历
-* *2024.12 - 2025.03*：**Shopee**，S&R&A，直播推荐算法实习生
+* *2024.12 - 2025.04*：**Shopee**，S&R&A，直播推荐算法实习生
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 

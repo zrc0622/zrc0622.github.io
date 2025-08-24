@@ -6,8 +6,8 @@ main:
   - title: "开源代码"
     url: /github/
 
-  - title: "生活随笔"
-    url: /blogs/
+  # - title: "生活随笔"
+  #   url: /blogs/
 
   # - title: "Publications"
   #   url: /publications/
