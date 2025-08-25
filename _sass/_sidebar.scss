@@ -200,8 +200,8 @@
 .author__urls {
   display: none;
   position: absolute;
-  right: -47.4px;
-  margin-top: -0.65px !important;  // email 和 哈工大 的间隔
+  right: 0;  // 关注气泡对齐位置
+  margin-top: 15px ; // 关注气泡的上方间隔 
   padding: 10px;
   padding-left: 12px;
   padding-bottom: 4.5px;
@@ -217,7 +217,7 @@
     right: 0px;
     display: block;
     position: relative;
-    margin: 0;
+    margin-top: -0.65px;  // email 和 哈工大 的间隔
     padding: 0;
     border: 0;
     background: transparent;
@@ -229,7 +229,7 @@
     content: "";
     position: absolute;
     top: -11px;
-    left: calc(50% - 10px);
+    left: calc(50% + 35px);  // 三角位置
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
@@ -246,7 +246,7 @@
     content: "";
     position: absolute;
     top: -10px;
-    left: calc(50% - 10px);
+    left: calc(50% + 35px);  // 三角位置
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
