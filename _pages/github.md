@@ -57,7 +57,7 @@ redirect_from:
 - [哈工大课程实验代码](#哈工大课程实验代码) -->
 
 
-<h2 style="margin-top: 15px;">论文代码</h2>
+<h2>论文代码</h2>
 
 <table class="awards-table">
     <tr>
@@ -74,7 +74,7 @@ redirect_from:
     </tr>
 </table>
 
-<h2 style="margin-top: 15px;">竞赛项目代码</h2>
+<h2>竞赛项目代码</h2>
 
 <table class="awards-table">
     <tr>
@@ -106,7 +106,7 @@ redirect_from:
     </tr>
 </table>
 
-<h2 style="margin-top: 15px;">哈工大课程实验代码</h2>
+<h2>哈工大课程实验代码</h2>
 
 <table class="awards-table">
     <tr>
