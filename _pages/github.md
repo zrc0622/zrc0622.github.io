@@ -65,7 +65,7 @@ redirect_from:
     </tr>
     <tr>
       <td>  <a href="https://github.com/zrc0622/HIRL4UCAV" target="_blank">HIRL4UCAN</a> </td> 
-      <td> 论文 <i><a href="https://arxiv.org/abs/2406.11562" target="_blank">An Imitative Reinforcement Learning Framework for Autonomous Dogfight</a></i> 的开源代码 </td>
+      <td> 论文 <i><a href="https://dl.acm.org/doi/abs/10.1145/3750733" target="_blank">An Imitative Reinforcement Learning Framework for Pursuit-Lock-Launch Missions</a></i> 的开源代码 </td>
     </tr>
     <tr>
       <td>  <a href="https://github.com/zrc0622/DASEN" target="_blank">DASEN</a> </td> 
