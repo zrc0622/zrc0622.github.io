@@ -39,6 +39,12 @@
     padding-right: 0;
   }
 
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    // Fixed positioning resolves percentage widths against the viewport.
+    // Use #main's two-column width plus a small extension into its content gutter.
+    width: calc((#{$x-large} - 2rem) * #{span(2 of 12) / 100%} + 25px);
+  }
+
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
@@ -145,6 +151,16 @@
 /* 默认显示侧边栏新闻内容 */
 .sidebar-extra-content {
   display: none;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@include breakpoint($large) {
+  .sidebar .author__bio,
+  .sidebar-extra-content .extra-list li {
+    text-align: justify;
+    text-align-last: start;
+  }
 }
 
 /* 在屏幕宽度超过 1600px 时隐藏侧边栏新闻内容 */

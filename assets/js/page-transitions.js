@@ -142,7 +142,9 @@
       } else if (animate && oldArticle.animate) {
         var oldContent = oldArticle.querySelector('.page__inner-wrap') || oldArticle;
         var oldOverflow = oldArticle.style.overflow;
+        var oldClipPath = oldArticle.style.clipPath || '';
         oldArticle.style.overflow = 'clip';
+        oldArticle.style.clipPath = 'inset(0 0 0 var(--page-slide-inset, 0px))';
         var outgoing = oldContent.animate([
           { transform: 'translateX(0)', opacity: 1 },
           { transform: 'translateX(' + (forward ? '-100%' : '100%') + ')', opacity: 0 }
@@ -155,10 +157,13 @@
         } finally {
           outgoing.cancel();
           oldArticle.style.overflow = oldOverflow;
+          oldArticle.style.clipPath = oldClipPath;
         }
         var newContent = newArticle.querySelector('.page__inner-wrap') || newArticle;
         var newOverflow = newArticle.style.overflow;
+        var newClipPath = newArticle.style.clipPath || '';
         newArticle.style.overflow = 'clip';
+        newArticle.style.clipPath = 'inset(0 0 0 var(--page-slide-inset, 0px))';
         var incoming = newContent.animate([
           { transform: 'translateX(' + (forward ? '100%' : '-100%') + ')', opacity: 0 },
           { transform: 'translateX(0)', opacity: 1 }
@@ -168,6 +173,7 @@
           await incoming.finished;
         } finally {
           newArticle.style.overflow = newOverflow;
+          newArticle.style.clipPath = newClipPath;
           if (activeAnimation === incoming) activeAnimation = null;
         }
       } else {

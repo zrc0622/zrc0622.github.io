@@ -34,6 +34,7 @@
   animation-duration: 320ms;
   z-index: 1;
   overflow: clip;
+  clip-path: inset(0 0 0 var(--page-slide-inset, 0px));
 }
 
 ::view-transition-image-pair(page-content) {
@@ -103,4 +104,25 @@
 /* Prevent a fallback slide from briefly widening the page on mobile. */
 html {
   overflow-x: clip;
+}
+
+@include breakpoint($large) {
+  html {
+    // Midpoint between the sidebar's right edge and the article text's left edge.
+    --page-slide-container-width: #{$large};
+    --page-slide-sidebar-extension: 0px;
+    --page-slide-inset: calc((var(--page-slide-sidebar-extension) + (var(--page-slide-container-width) - 2rem) * #{(span(0.5 of 12 wide) - gutter()) / 100%}) / 2);
+  }
+}
+
+@include breakpoint($x-large) {
+  html {
+    --page-slide-container-width: #{$x-large};
+  }
+}
+
+@media screen and (min-width: $sidebar-screen-min-width) {
+  html {
+    --page-slide-sidebar-extension: 25px;
+  }
 }
