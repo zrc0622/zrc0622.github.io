@@ -41,8 +41,9 @@
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     // Fixed positioning resolves percentage widths against the viewport.
-    // Use #main's two-column width plus a small extension into its content gutter.
-    width: calc((#{$x-large} - 2rem) * #{span(2 of 12) / 100%} + 25px);
+    // Preserve the widened text column and put the scroll track in extra space.
+    width: calc((#{$x-large} - 2rem) * #{span(2 of 12) / 100%} + 25px + 16px);
+    padding-right: 16px;
   }
 
   h2, h3, h4, h5, h6 {
