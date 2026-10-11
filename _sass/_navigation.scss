@@ -191,6 +191,10 @@
       color: $masthead-link-color-hover;
     }
 
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
     &[aria-current="page"] {
       color: $link-color-hover;
       font-weight: 700;

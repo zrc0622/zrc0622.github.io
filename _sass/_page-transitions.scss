@@ -5,6 +5,11 @@
   display: flow-root;
 }
 
+// Focus moves here after navigation to establish the next keyboard tab position.
+#main > .page[tabindex="-1"]:focus {
+  outline: none;
+}
+
 @supports (view-transition-name: page-content) {
   #main {
     animation: none;
