@@ -5,7 +5,7 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 1.75em;
+  margin-top: 2.1em;
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
@@ -25,6 +25,9 @@
 
   .page__inner-wrap {
     @include full();
+    // Align visible text tops while preserving each page's type size and line spacing.
+    position: relative;
+    top: calc(0px - var(--page-first-line-inset, 0px));
 
     .page__content,
     .page__meta,
@@ -41,6 +44,10 @@
   & + .page__meta {
     margin-top: -0.5em;
   }
+}
+
+.page--home .page__content > p:first-child {
+  margin-top: 0;
 }
 
 .page__lead {

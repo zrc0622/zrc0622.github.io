@@ -13,3 +13,14 @@ package-lock.json
 
 #
 .sass-cache/
+
+.DS_store
+
+# Local preview configuration
+.bundle/
+
+# planning-with-files working files
+.planning/
+task_plan.md
+findings.md
+progress.md

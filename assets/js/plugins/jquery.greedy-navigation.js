@@ -1,72 +1,35 @@
-/*
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
-*/
-
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $hlinks = $('#site-nav .hidden-links');
-
-var breaks = [];
+/* Keep complete menu labels together instead of squeezing table cells. */
+var siteNavigation = document.getElementById('site-nav');
+var navigationButton = siteNavigation.querySelector('button');
+var visibleNavigation = siteNavigation.querySelector('.visible-links');
+var hiddenNavigation = siteNavigation.querySelector('.hidden-links');
+var menuItems = Array.prototype.slice.call(visibleNavigation.children).filter(function (item) {
+  return !item.classList.contains('masthead__menu-item--lg');
+});
 
 function updateNav() {
-
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-  // The visible list is overflowing the nav
-  if($vlinks.width() > availableSpace) {
-
-    // Record the width of the list
-    breaks.push($vlinks.width());
-
-    // Move item to the hidden list
-    $vlinks.children('*:not(.masthead__menu-item--lg)').last().prependTo($hlinks);
-
-    // Show the dropdown btn
-    if($btn.hasClass('hidden')) {
-      $btn.removeClass('hidden');
-    }
-
-  // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    if(availableSpace > breaks[breaks.length-1]) {
-
-      // Move the item to the visible list
-      $hlinks.children().first().appendTo($vlinks);
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if(breaks.length < 1) {
-      $btn.addClass('hidden');
-      $hlinks.addClass('hidden');
-    }
+  // Measure the full, uncompressed row after restoring its original order.
+  delete siteNavigation.dataset.compact;
+  menuItems.forEach(function (item) { visibleNavigation.appendChild(item); });
+  var collapsed = visibleNavigation.getBoundingClientRect().width > siteNavigation.clientWidth;
+  siteNavigation.dataset.compact = collapsed ? 'true' : 'false';
+  if (collapsed) menuItems.forEach(function (item) { hiddenNavigation.appendChild(item); });
+  navigationButton.classList.toggle('hidden', !collapsed);
+  navigationButton.setAttribute('count', collapsed ? menuItems.length : 0);
+  if (!collapsed) {
+    hiddenNavigation.classList.add('hidden');
+    navigationButton.classList.remove('close');
+    navigationButton.setAttribute('aria-expanded', 'false');
   }
-
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
-
-  // Recur if the visible list is still overflowing the nav
-  if($vlinks.width() > availableSpace) {
-    updateNav();
-  }
-
 }
 
-// Window listeners
-
-$(window).resize(function() {
-  updateNav();
+window.addEventListener('resize', updateNav);
+if (window.ResizeObserver) new ResizeObserver(updateNav).observe(siteNavigation);
+if (document.fonts) document.fonts.ready.then(updateNav);
+navigationButton.addEventListener('click', function () {
+  var open = hiddenNavigation.classList.contains('hidden');
+  hiddenNavigation.classList.toggle('hidden', !open);
+  navigationButton.classList.toggle('close', open);
+  navigationButton.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
-
-$btn.on('click', function() {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-});
-
 updateNav();

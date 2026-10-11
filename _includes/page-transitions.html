@@ -1,0 +1,7 @@
+<script id="page-transition-routes" type="application/json">
+[
+  {{ '/' | prepend: site.baseurl | jsonify }}{% for link in site.data.navigation.main %}{% unless link.url contains 'http' %},
+  {{ link.url | prepend: site.baseurl | jsonify }}{% endunless %}{% endfor %}
+]
+</script>
+<script src="{{ base_path }}/assets/js/page-transitions.js" defer></script>

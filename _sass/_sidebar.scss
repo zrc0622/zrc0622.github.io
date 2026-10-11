@@ -7,11 +7,13 @@
    ========================================================================== */
 
 .sidebar {
+  position: relative;
+  z-index: 10;
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
 
   @include clearfix();
-  margin-bottom: 1em;
+  margin-bottom: 2.1em;
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
@@ -22,6 +24,7 @@
 
   @include breakpoint($large) {
     @include span(2 of 12);
+    margin-bottom: 1em;
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -209,7 +212,7 @@
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background: #fff;
-  z-index: -1;
+  z-index: 1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
 
@@ -235,6 +238,9 @@
     border-width: 0 10px 10px;
     border-color: $border-color transparent;
     z-index: 0;
+    filter: drop-shadow(0 -1px 2px rgba(#000, 0.14));
+    // Keep shadow on the exposed edges, away from the join with the menu.
+    clip-path: inset(-6px -6px 0 -6px);
 
     @include breakpoint($large) {
       display: none;

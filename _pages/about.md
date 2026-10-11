@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-我是清华大学深圳国际研究生院数据与信息研究院（人工智能项目）的硕士一年级学生，同时也是[智能计算实验室](https://thusigsiclab.github.io/thu.github.io/)的成员
+我是清华大学深圳国际研究生院数据与信息研究院（人工智能项目）的硕士二年级学生，同时也是[智能计算实验室](https://thusigsiclab.github.io/thu.github.io/)的成员
 
-<p style="margin-bottom: 18px !important;">我的研究领域包括强化学习和模仿学习，目前正在专注于可解释强化学习和多智能体强化学习</p>
+<p style="margin-bottom: 18px !important;">我的研究领域包括推荐系统和强化学习，主要研究超长行为序列建模与生成式推荐中的强化学习</p>
 
 # 教育经历
 * *2025.09 - 2028.06*：硕士，**清华大学**，深圳国际研究生院
@@ -23,6 +23,7 @@ redirect_from:
 * [Robust Visual Imitation Learning with Inverse Dynamics Representations](https://ojs.aaai.org/index.php/AAAI/article/view/29265). Siyuan Li\*, Xun Wang\*, **Rongchang Zuo**, Kewu Sun, Lingfei Cui, Jishiyu Ding, Peng Liu, Zhe Ma. *Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), 2024*.
 
 ## 专利
+* [一种多智能体的任务规划与执行方法和决策系统](https://patents.google.com/patent/CN121934617A/zh). 李秀，张立华，**左镕畅**.
 * [一种具有转移距离度量性的机械控制设备状态表征学习方法、电子设备及存储介质](https://patents.google.com/patent/CN117311156A/zh). 李斯源，韩世杰，刘鹏，**左镕畅**，高天翔，洪子健.
 * [面向高维扰动环境的小样本鲁棒模仿学习训练方法、电子设备及存储介质](https://patents.google.com/patent/CN117193008A/zh). 汪勋，李斯源，**左镕畅**，孙科武，杨皙睿，刘鹏.
 
@@ -34,6 +35,7 @@ redirect_from:
 * *2022.08*：2022年全国大学生物联网设计竞赛东北赛区二等奖
 
 # 工作经历
+* *2026.04 - 至今*：**阿里巴巴**，淘宝首猜，推荐算法研究型实习生
 * *2024.12 - 2025.04*：**Shopee**，S&R&A，直播推荐算法实习生
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).

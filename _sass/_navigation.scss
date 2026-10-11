@@ -174,7 +174,7 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  min-width: 0;
   background: $background-color;
 
   a {
@@ -183,9 +183,17 @@
     padding: 0.5rem 0;
     color: $masthead-link-color;
     text-decoration: none;
+    // Moving links between the row and dropdown must change their size immediately.
+    // The global "all" transition otherwise makes overflow measurements unreliable.
+    transition: color 0.2s ease-in-out;
 
     &:hover {
       color: $masthead-link-color-hover;
+    }
+
+    &[aria-current="page"] {
+      color: $link-color-hover;
+      font-weight: 700;
     }
   }
 
@@ -203,15 +211,15 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    width: max-content;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
+      flex: 0 0 auto;
 
       &:first-child {
         font-weight: bold;
-        text-wrap: wrap;
+        white-space: nowrap;
 
         a {
           margin-left: 0;
@@ -243,10 +251,31 @@
                 transform: scaleX(0); /* hide*/
       }
 
-      &:hover:before {
+      &:hover:before,
+      &[aria-current="page"]:before {
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
                 transform: scaleX(1); /* reveal*/
+      }
+
+      &[aria-current="page"]:before {
+        background: $link-color;
+      }
+    }
+  }
+
+  &[data-compact="true"] .visible-links {
+    max-width: calc(100% - 3.5rem);
+
+    .masthead__menu-item--lg {
+      min-width: 0;
+      padding-right: 0;
+      flex-shrink: 1;
+
+      a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
   }
@@ -270,6 +299,10 @@
       &:hover {
         color: $masthead-link-color-hover;
         background: mix(#fff, $primary-color, 75%);
+      }
+
+      &[aria-current="page"] {
+        background: mix(#fff, $link-color, 90%);
       }
     }
 

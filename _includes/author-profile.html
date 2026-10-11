@@ -22,7 +22,7 @@
 
   <!-- 使用新的样式 -->
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">关 注</button>
+    <button class="btn btn--inverse" type="button" aria-expanded="false" aria-controls="author-follow-links">关 注</button>
     <ul class="author__loc social-icons">
       {% if author.location %}
         <li style="display: flex; align-items: center;">
@@ -38,7 +38,7 @@
       {% endif %}
     </ul>
 
-    <ul class="author__urls social-icons">
+    <ul id="author-follow-links" class="author__urls social-icons">
       {% if author.email %}
         <li style="display: flex; align-items: center;">
           <img src="/images/icons/envelope-solid.svg" style="width: 14px; height: 14px; margin-top: -4.15px; margin-right: 5.8px;">

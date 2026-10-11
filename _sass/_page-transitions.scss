@@ -1,0 +1,101 @@
+/* Update article content within the same document; shared chrome stays still. */
+
+#main > .page {
+  // The inner wrap floats at all widths; its parent must retain a snapshot height.
+  display: flow-root;
+}
+
+@supports (view-transition-name: page-content) {
+  #main {
+    animation: none;
+  }
+
+  #main > .page {
+    view-transition-name: page-content;
+  }
+
+  .masthead {
+    view-transition-name: site-navigation;
+    animation: none;
+  }
+
+  .sidebar,
+  .page__footer {
+    animation: none;
+  }
+}
+
+::view-transition-group(page-content) {
+  animation-duration: 320ms;
+  z-index: 1;
+  overflow: clip;
+}
+
+::view-transition-image-pair(page-content) {
+  overflow: clip;
+}
+
+::view-transition-group(site-navigation) {
+  z-index: 2;
+}
+
+::view-transition-old(root),
+::view-transition-new(root),
+::view-transition-old(site-navigation),
+::view-transition-new(site-navigation) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(page-content),
+::view-transition-new(page-content) {
+  animation-duration: 320ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: both;
+  mix-blend-mode: normal;
+}
+
+[data-transition-direction="forward"]::view-transition-old(page-content) {
+  animation-name: page-slide-out-left;
+}
+
+[data-transition-direction="forward"]::view-transition-new(page-content) {
+  animation-name: page-slide-in-right;
+}
+
+[data-transition-direction="backward"]::view-transition-old(page-content) {
+  animation-name: page-slide-out-right;
+}
+
+[data-transition-direction="backward"]::view-transition-new(page-content) {
+  animation-name: page-slide-in-left;
+}
+
+@keyframes page-slide-out-left {
+  to { transform: translateX(-100%); }
+}
+
+@keyframes page-slide-in-right {
+  from { transform: translateX(100%); }
+}
+
+@keyframes page-slide-out-right {
+  to { transform: translateX(100%); }
+}
+
+@keyframes page-slide-in-left {
+  from { transform: translateX(-100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none;
+  }
+}
+
+/* Prevent a fallback slide from briefly widening the page on mobile. */
+html {
+  overflow-x: clip;
+}
