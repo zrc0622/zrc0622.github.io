@@ -50,6 +50,12 @@
   margin-top: 0;
 }
 
+.page--sections .page__title {
+  // Preserve the previous first-section gap when its top margin changes from
+  // 18px to 1.3em. A section heading is 1.3rem, so that margin is 1.69rem.
+  margin-bottom: calc(0.5em + 18px - 1.69rem);
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;

@@ -56,7 +56,7 @@ redirect_from:
 }
 </style>
 
-<h2 style="margin-top: 18px;">大四</h2>
+<h2>大四</h2>
 <table class="awards-table">
     <tr>
         <th>名称</th><th>级别</th><th>类别</th><th>时间</th><th>其它</th>
