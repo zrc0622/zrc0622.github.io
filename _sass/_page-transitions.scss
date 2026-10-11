@@ -123,7 +123,7 @@ html {
 
 @media screen and (min-width: $sidebar-screen-min-width) {
   html {
-    // Include the 16px scroll-track space in the sidebar's outer right edge.
-    --page-slide-sidebar-extension: 41px;
+    // Include the 24px scroll-track space in the sidebar's outer right edge.
+    --page-slide-sidebar-extension: 49px;
   }
 }
