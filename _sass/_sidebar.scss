@@ -69,6 +69,52 @@
   }
 }
 
+@media screen and (min-width: $sidebar-screen-min-width) {
+  // Keep the scroll area and track width stable while fading the thumb visually.
+  .sidebar.sidebar-scrollbar-auto-hide {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+      border-radius: 8px;
+    }
+
+    &.is-scrollbar-visible {
+      scrollbar-color: #777 transparent;
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #777;
+      }
+    }
+  }
+}
+
+@media (forced-colors: active) {
+  .sidebar.sidebar-scrollbar-auto-hide,
+  .sidebar.sidebar-scrollbar-auto-hide.is-scrollbar-visible {
+    scrollbar-color: auto;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: CanvasText;
+    }
+  }
+}
+
 .sidebar__right {
   margin-bottom: 1em;
 
