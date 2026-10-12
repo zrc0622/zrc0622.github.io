@@ -70,35 +70,29 @@
 }
 
 @media screen and (min-width: $sidebar-screen-min-width) {
-  // Keep the scroll area and track width stable while fading the thumb visually.
+  // Match the page's native scrollbar size and restore its native colors on use.
   .sidebar.sidebar-scrollbar-auto-hide {
-    scrollbar-width: thin;
+    scrollbar-width: auto;
     scrollbar-color: transparent transparent;
 
-    &::-webkit-scrollbar {
-      width: 8px;
-      background-color: transparent;
-    }
-
-    &::-webkit-scrollbar-track,
-    &::-webkit-scrollbar-corner {
-      background-color: transparent;
-    }
-
-    &::-webkit-scrollbar-button {
-      display: none;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: transparent;
-      border-radius: 8px;
-    }
-
     &.is-scrollbar-visible {
-      scrollbar-color: #777 transparent;
+      scrollbar-color: auto;
+    }
+  }
+}
 
-      &::-webkit-scrollbar-thumb {
-        background-color: #777;
+@supports not (scrollbar-color: transparent transparent) {
+  @media screen and (min-width: $sidebar-screen-min-width) and (forced-colors: none) {
+    // Older WebKit browsers only receive custom paint while the bar is hidden.
+    .sidebar.sidebar-scrollbar-auto-hide:not(.is-scrollbar-visible) {
+      &::-webkit-scrollbar,
+      &::-webkit-scrollbar-track,
+      &::-webkit-scrollbar-thumb,
+      &::-webkit-scrollbar-button,
+      &::-webkit-scrollbar-corner {
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
       }
     }
   }
@@ -109,9 +103,6 @@
   .sidebar.sidebar-scrollbar-auto-hide.is-scrollbar-visible {
     scrollbar-color: auto;
 
-    &::-webkit-scrollbar-thumb {
-      background-color: CanvasText;
-    }
   }
 }
 
